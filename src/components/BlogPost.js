@@ -1,6 +1,23 @@
 import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
+import { useRef } from 'react'
 
 function BlogPost({ blogposts }) {
+
+    useEffect(() => {
+        alert('Component BlogPost.js has finished rendering!')
+      })
+
+      const order = useRef([]);
+      useLayoutEffect(() => {
+        order.current.push("Component BlogPost");
+        return () => {
+          order.current.push("Component BlogPost (unmount)");
+          console.log(order.current);
+        };
+      }, []);
+
     const params = useParams()
     const id = params.id
     const blogpost = blogposts.find(post => post.id === id)
@@ -14,6 +31,8 @@ function BlogPost({ blogposts }) {
             ))
         }
     </>
-    )		
+    
+    )	
+    	
 }
 export default BlogPost

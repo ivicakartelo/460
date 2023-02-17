@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './index.css'
 import App from './App'
 import BlogPost from './components/BlogPost'
@@ -11,8 +11,9 @@ import {
 } from "react-router-dom"
 import blogposts from './components/blogposts-data'
 
-ReactDOM.render(
-  <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} >
@@ -26,6 +27,5 @@ ReactDOM.render(
     </Route>
     </Routes>
   </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  
 )
