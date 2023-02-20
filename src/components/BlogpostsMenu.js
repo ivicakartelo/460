@@ -8,14 +8,7 @@ function BlogpostsMenu({ blogposts }) {
     useEffect(() => {
         alert('Component BlogPostsMenu.js has finished rendering!')
       })
-      const order = useRef([]);
-      useLayoutEffect(() => {
-        order.current.push("Component BlogPostMenu");
-        return () => {
-          order.current.push("Component BlogPostMenu (unmount)");
-          console.log(order.current);
-        };
-      }, []);
+      
 
     return (
     <>

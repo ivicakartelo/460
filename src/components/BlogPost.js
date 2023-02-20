@@ -9,15 +9,6 @@ function BlogPost({ blogposts }) {
         alert('Component BlogPost.js has finished rendering!')
       })
 
-      const order = useRef([]);
-      useLayoutEffect(() => {
-        order.current.push("Component BlogPost");
-        return () => {
-          order.current.push("Component BlogPost (unmount)");
-          console.log(order.current);
-        };
-      }, []);
-
     const params = useParams()
     const id = params.id
     const blogpost = blogposts.find(post => post.id === id)
