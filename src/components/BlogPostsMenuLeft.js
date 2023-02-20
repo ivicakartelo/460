@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
-import { useLayoutEffect } from 'react'
-import { useRef } from 'react'
 
 function BlogPostsMenuLeft({ blogposts }) {
 
