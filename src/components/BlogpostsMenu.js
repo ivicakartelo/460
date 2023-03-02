@@ -4,11 +4,11 @@ import { useLayoutEffect } from 'react'
 import { useRef } from 'react'
 
 function BlogpostsMenu({ blogposts }) {
-
+/*
     useEffect(() => {
         alert('Component BlogPostsMenu.js has finished rendering!')
       })
-      
+ */     
 
     return (
     <>

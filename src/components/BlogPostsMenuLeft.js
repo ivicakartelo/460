@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 function BlogPostsMenuLeft({ blogposts }) {
-
+/*
     useEffect(() => {
         alert('Component BlogPostsMenuLeft.js has finished rendering!')
       })
-
+*/
     return (   
         <ul>
             {blogposts.map((post) => 

@@ -7,18 +7,11 @@ import { useLayoutEffect } from 'react'
 import { useRef } from 'react'
 
 function App() {
-
+/*
   useEffect(() => {
     alert('Component App.js has finished rendering!')
   })
-  const order = useRef([]);
-      useLayoutEffect(() => {
-        order.current.push("Component App");
-        return () => {
-          order.current.push("Component App (unmount)");
-          console.log(order.current);
-        };
-      }, []);
+  */
 
   return (
     <div className="container">

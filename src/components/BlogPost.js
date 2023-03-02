@@ -4,11 +4,11 @@ import { useLayoutEffect } from 'react'
 import { useRef } from 'react'
 
 function BlogPost({ blogposts }) {
-
+/*
     useEffect(() => {
         alert('Component BlogPost.js has finished rendering!')
       })
-
+*/
     const params = useParams()
     const id = params.id
     const blogpost = blogposts.find(post => post.id === id)
