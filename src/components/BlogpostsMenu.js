@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-function BlogpostsMenu({ blogposts }) {     
+function BlogpostsMenu({ blogposts }) { 
+    
+    
+  useEffect(() => {
+    alert('Component BlogpostsMenu.js has finished rendering!')
+  })
+  
 
     return (
     <>

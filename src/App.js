@@ -1,9 +1,16 @@
+import { useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom'
 import BlogPostsMenuLeft from './components/BlogPostsMenuLeft';
 import "./App.css"
 import blogposts from './components/blogposts-data'
 
 function App() {
+
+  
+  useEffect(() => {
+    alert('Component App.js has finished rendering!')
+  })
+  
 
   return (
     <div className="container">

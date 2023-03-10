@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 function BlogPost({ blogposts }) {
-
+    
+  useEffect(() => {
+    alert('Component BlogPost.js has finished rendering!')
+  })
+  
     const params = useParams()
     const id = params.id
     const blogpost = blogposts.find(post => post.id === id)
